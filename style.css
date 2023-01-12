@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(83, 10, 83);
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+.body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh
+}
+@media only screen and (min-width:600px){
+    .board{
+        background-color: rgb(83, 10, 83);
+        width: 60vh;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap:3vh;
+        
+    }
+    .box{
+        background-color: yellow;
+        height:18vh;
+        width: 18vh;
+        font-size: 18vh;
+        color: red;
+    }
+    .result{
+        width:45vh;
+        height: 10vh;
+        font-size: 10vh;
+        color: white;
+    }
+    .chance{
+        width:25vh;
+        height: 8vh;
+        font-size: 6vh;
+        
+    }
+}
+@media only screen and (max-width:600px){
+    .board{
+        background-color: rgb(83, 10, 83);
+        width: 45vh;
+        height: 45vh;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap:1.5vh;
+        
+    }
+    .box{
+        background-color: white;
+        height:14vh;
+        width: 14vh;
+        font-size: 14vh;
+        color: red;
+    
+}
+    .result{
+        width:45vw;
+        height: 10vw;
+        font-size: 10vw;
+        color: yellow;
+    }
+    .chance{
+        width:35vw;
+        height: 10vw;
+        font-size: 8vw;
+        
+    }
+}
+
