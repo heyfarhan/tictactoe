@@ -12,16 +12,15 @@ function fun(e){
         return;
 
     }
-    
-
-    }
     // console.log(e.target);
     if(e.target.tagName=='DIV'){
         if(c%2!=0){
-        r.innerText="PLAY : O";
-    }
-    else{
-        r.innerText="PLAY : X";
+            r.innerText="PLAY : O";
+        }
+        else{
+            r.innerText="PLAY : X";
+    
+        }
         if(c%2==0){
             if(e.target.innerText==""){
                 e.target.innerText+="O";
